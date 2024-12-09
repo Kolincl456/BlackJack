@@ -14,6 +14,13 @@ import java.util.*;
  * @author SrKolin.
  */
 public class GUI extends JFrame{
+    
+    //Variable para generar números aleatorios para las cartas que toma el jugador.
+    int rand = new Random().nextInt(52);
+    
+    //
+    
+    
     /*aW = Variable de ancho de la ventana.
       aH = Variable de largo de la ventana.
     */ 
@@ -66,8 +73,7 @@ public class GUI extends JFrame{
     ArrayList<Cartas> jugadorCartas = new ArrayList<Cartas>();
     ArrayList<Cartas> dealerCartas = new ArrayList<Cartas>();
     
-    //Variable para generar números aleatorios para las cartas que toma el jugador.
-    int rand = new Random().nextInt(52);
+    
     
     //Fuentes
     Font FuenteBoton = new Font("Times New Roman", Font.PLAIN, 30);
